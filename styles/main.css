@@ -14,16 +14,17 @@
     height: 100%;
     position: absolute;
     top: 0;
-
 }
 
+.container-2 {
+        background: url('../modern-269456_1920.jpg') no-repeat center center;
+}
 
 .container-top {
 	width: 100%;
 	margin: 0 auto;
 	padding: 60px;
 	box-sizing: border-box;
-
 }
 
 .Name {
@@ -38,6 +39,7 @@
     min-height: 100px;
     float:left;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .Button {
@@ -71,4 +73,61 @@
     background-color: rgba(211, 211, 211, 0.7);
     border: 1px solid black;
     box-sizing: border-box;
+}
+
+.container__form {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+    color: white;
+
+}
+
+.form-horizontal {
+    margin-top: 75px;
+    margin-left: 550px;
+}
+
+.result {
+    width: 350px;
+    margin: 5px;
+    border: 1px solid #5A75FF;
+
+}
+
+.result__image{
+    position: relative;
+}
+
+.results__description-results{
+    padding: 10px;
+}
+
+.result__description {
+    margin-bottom: 15px;
+    font-family: helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.result__like{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.result__price{
+    position: absolute;
+    bottom: 7px;
+    left: 2px;
+    color: white;
+    font-size: 20px;
+    font-family: helvetica, sans-serif;
+}
+
+.result__rating{
+    float: left;
+}
+
+.result__detail-link {
+    float: right;
 }
