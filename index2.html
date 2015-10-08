@@ -5,70 +5,67 @@
     <title >Space_Finder</title>
     <link rel='stylesheet' href='styles/reset.css'>
     <link rel='stylesheet' href='styles/main.css'>
+
 </head>
-<body>
+<body id="mytheme" class="container-2">
 
-    <div class="container-main container-2 cf">
+   <!--  <div class="container-main container-2 cf"> -->
 
-    <div class="container_top cf">
-  	<div class="container_top Name">Space Finder</div>
-  	<div class="background"></div>
-    </div>
+    <div class="header row">
+      <div class="content-wrapper cf">
+        <h1 class="header__logo">Space Finder</h1>
+        <nav class="header__nav">
+          <a class="navigation__link navigation__link--large" href="http://www.fewd.us/">
+          Find Space
+          </a>
+          <a class="navigation__link navigation__link--large" href="http://www.fewd.us/">
+          Submit your Space
+          </a>
+          <a class="navigation__link" href="http://www.fewd.us/">
+          Sign In
+          </a>
+          <a class="navigation__link" href="http://www.fewd.us/">
+          FAQ
+          </a>
+        </nav>
+      </div>
+    </div><!--end of header-->
 
 
-    <div class="container__form">
+    <!-- <div class="container-form-box row"> -->
+
+    <div class="container-form">
       <form class="form-horizontal">
-      <div class="form-group">
-        <label for="inputDate3" class="col-sm-2 control-label">Date</label>
-        <div class="col-sm-10">
-          <input type="Date" class="form-control" id="inputEmail3" placeholder="Date">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputTime3" class="col-sm-2 control-label">Time</label>
-        <div class="col-sm-10">
-          <input type="Time" class="form-control" id="inputTime3" placeholder="Time">
-        </div>
         <div class="form-group">
-        <label for="inputType3" class="col-sm-2 control-label">Type of Space</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputType3" placeholder="Type of Space">
+         <div class="form__label">Date
+            <input type="Date" class="form-control">
+          </div>
+          <div class="form__label">Time
+            <input type="Time" class="form-control">
+          </div>
+          <div class="form__label">Type of Space
+            <input type="search" class="form-control" placeholder="Type of Space">
+          </div>
+          <div class="form__label">Neighborhood
+            <input type="search" class="form-control" placeholder="Neighborhood">
+          </div>
+          <div class="form__label">Choose your Location
+            <input type="search" class="form-control" placeholder="Location">
+          </div>
+          <div class="form__label">Number of People
+            <input type="number" class="form-control" placeholder="Number of People">
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="inputNeightborhood3" class="col-sm-2 control-label">Neighborhood</label>
-        <div class="col-sm-10">
-          <input type="Neighborhood" class="form-control" id="inputPassword3" placeholder="Neighborhood">
-        </div>
-        <div class="form-group">
-        <label for="inputDate3" class="col-sm-2 control-label">Choose your Location</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Choose location">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputTime3" class="col-sm-2 control-label">Number of People</label>
-      <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword3" placeholder="Number of People">
-      </div>
+      </form>
+      <a href="#" class="myButton">Submit</a>
     </div>
 
 
-
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
+    <div class="footer">
+      <div class="content-wrapper">
+         2015 Space Finder. New York, NY
       </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-  </div>
-</form>
-
-
 
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
     <script src='javascript/main.js'></script>

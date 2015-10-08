@@ -4,19 +4,42 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
     <title >Space_Finder</title>
     <link rel='stylesheet' href='styles/reset.css'>
-    <link rel='stylesheet' href='styles/main.css'>
+   
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+     <link rel='stylesheet' href='styles/main.css'>
 </head>
-<body>
+<body class="container-result">
 
+    <div class="header row">
+      <div class="content-wrapper cf">
+        <h1 class="header__logo">Space Finder</h1>
+        <nav class="header__nav">
+          <a class="navigation__link navigation__link--large" href="http://www.fewd.us/">
+          Find Space
+          </a>
+          <a class="navigation__link navigation__link--large" href="http://www.fewd.us/">
+          Submit your Space
+          </a>
+          <a class="navigation__link" href="http://www.fewd.us/">
+          Sign In
+          </a>
+          <a class="navigation__link" href="http://www.fewd.us/">
+          FAQ
+          </a>
+        </nav>
+      </div>
+    </div><!--end of header-->
+    
 
-    <div class="target"></div>
+    <div class="wrapper">
+        <div class="target"></div>
+    </div>
 
-    >
     <script type="my/foo" id="template">
         <div class="result">
             <div class="result__image">
                 <img src="<%= image %>">
-                <div class="result__like">Thumbs up!</div>
+                <div class="result__like"></div>
                 <div class="result__price"> $<%= price %>   per hour</div>
             </div> <!-- result__image -->
             <div class="results__description-results cf">
@@ -25,14 +48,20 @@
                 <div class="address2"><%=address2 %>, <%=suite %></div>
                 <div class="address3"> <%=city%>, <%=state%>, <%=zip%> </div>
             </div>
-                <div class="result__rating"> <%= rating %></div>
+                <div class="result__rating"> <%= rating %><i class="fa fa-star"></i></div>
                 <div class="result__detail-link"> 
-                    <a href="#">Details</a>
+                    Details
                 </div> 
             </div> <!-- results__description-results -->
         </div> <!-- result -->
     
     </script>
+
+    <div class="footer">
+      <div class="content-wrapper">
+         2015 Space Finder. New York, NY
+      </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
